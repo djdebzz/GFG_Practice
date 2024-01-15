@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class arrayIntoCollection {
@@ -19,7 +20,14 @@ public class arrayIntoCollection {
 		 * Arrays.asList(months); days.add(1,"Thursday");
 		 */
 				
-		System.out.print("Converted elements:  " + stringList);
+		System.out.println("Converted elements:  " + stringList);
+		String[] bikes = {"Pulsar","Karizma","Gixxer","CBR"};
+		
+		List<String> stringList1 = new ArrayList<>();
+		Collections.addAll(stringList1, bikes);
+		
+		System.out.print(stringList1);
+		
 
 	}
 
